@@ -1,9 +1,33 @@
+/* Fixed styles */
+
+.whitediv{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.blackdiv{
+    height: 105vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(0, 0, 0);
+    width: 100%;
+    text-align: justify;
+    color: white;
+}
+
+/* Personalized */
+
 body{
     font-family: 'Roboto Condensed', sans-serif;
     background-color: aliceblue;
     margin: 0;
     padding: 0;
 }
+
+
 a{
     color: lightgoldenrodyellow; /* Change the text color */
     text-decoration: none; /* Remove underline */
@@ -17,26 +41,12 @@ a:hover {
     text-decoration: underline;
 }
 
-.whitediv{
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+
 .title{
   position: absolute;
   font-size: 10vw;
 }
-.blackdiv{
-    height: 105vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: rgb(0, 0, 0);
-    width: 100%;
-    text-align: justify;
-    color: white;
-}
+
 .medium{
     position: absolute;
     font-size: 5vw;
@@ -45,7 +55,7 @@ a:hover {
     
 }
 
-img{
-    height: 50%;
+.logoimg{
+    height: 6vw;
     width: 15%;
 }
