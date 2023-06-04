@@ -1,10 +1,12 @@
 /* Fixed styles */
 
 .whitediv{
-    height: 100vh;
+    height: 105vh;
     display: flex;
     justify-content: center;
     align-items: center;
+    text-align: justify;
+    width: 100%;
 }
 
 .blackdiv{
@@ -19,7 +21,9 @@
 }
 
 /* Personalized */
-
+html{
+    scroll-behavior: smooth;
+}
 body{
     font-family: 'Roboto Condensed', sans-serif;
     background-color: aliceblue;
@@ -56,6 +60,6 @@ a:hover {
 }
 
 .logoimg{
-    height: 6vw;
-    width: 15%;
+    width: 25%;
+    height: 50%;
 }
