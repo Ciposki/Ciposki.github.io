@@ -8,9 +8,40 @@
 body{
     display: flex;
     flex-direction: column;
-    font-family: 'Space Grotesk', sans-serif;
+    /* font-family: 'Space Grotesk', sans-serif; */
+    font-family: 'Montserrat', sans-serif;
     height: auto;
     scroll-behavior: smooth;
+}
+
+.navmenu{
+
+    font-family: 'Cabin', sans-serif;
+    background-color: white;
+    box-shadow:0px 1px 5px 0px black ;
+    position: fixed;
+    z-index: 999;
+    display: flex;
+    width: 100vw;
+    height: 3vw;
+    justify-content: space-evenly;
+    align-items: center;
+    list-style-type: none;
+    transition: top 0.3s;
+    
+}
+
+.navmenu a{
+    text-decoration: none;
+    color: black;
+    font-size: 1.2vw;
+}
+
+.navmenu img{
+    position: relative;
+    width: 7vw;
+    right: 8vw;
+    
 }
 
 .defaultsection{
@@ -50,16 +81,45 @@ button{
     display: flex;
     position: relative;
     width: 3vw;
-    height: 5vw;
+    height: 4.5vw;
     background-color: black;
     left: 6.5vw;
     border-radius: 50px;
     justify-content: center;
     align-items: center;
+    transition: all .3s ease
 }
+button:hover {
+    height: 5vw;
+    transition: all .3s ease
+}
+.button:hover{
+    transform: translateY(0.3vw);
+    transition: all .3s ease
+
+}
+
+
 .button svg{
+    position: relative;
     filter: invert(100%);
     width: 3vw;
+    transition: all .3s ease
+}
+
+.buttonup:hover{
+    transform: translateY(-0.3vw);
+    transition: all .3s ease
+
+}
+
+
+.buttonup svg{
+    position: relative;
+    transform: rotatex(180deg);
+    filter: invert(100%);
+    width: 3vw;
+    transition: all .3s ease
 }
 
 .box1{
@@ -87,6 +147,7 @@ button{
     align-items: center;
  }
  .text h1{
+    font-family: 'Cabin', sans-serif;
     text-align: center;
     font-size: 4vw;
  }
@@ -94,4 +155,50 @@ button{
     text-align: justify;
     font-size: 1.5vw;
  }
+
+ /* Servizi */
+.servizi{
+    display: flex;
+
+    width: 100vw;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.tiposervizio{
+    display: flex;
+    flex-direction: column;
+    width: 30vw;
+    height: 25vw;
+    overflow: hidden;
+    
+    flex-shrink: 0;
+    
+    text-align: left;
+    transition: all .3s ease
+}
+.tiposervizio h1{
+    position: relative;
+    font-size: 1.5vw;
+    top: 0.5vw;
+}
+
+.tiposervizio:hover{
+    width: 32vw;
+    height: 27vw;
+    transition: all .3s ease;
+}
+ /* Media only */
+
+ @media only screen and (max-width: 1200px) {
+    .text{
+        border: 1px solid red;
+        height: 50vw;
+        width: 40vw;
+    }
+    .text h1{
+        text-align: center;
+        font-size: 6vw;
+     }
+  }
 

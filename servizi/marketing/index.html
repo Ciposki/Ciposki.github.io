@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="it-IT">
+<head>
+    <meta charset="UTF-8" />
+    <title>Welcome to Mbare Media</title>
+    <link rel="stylesheet" href="../../style.css">
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
+<!-- Cabin REGULAR400 -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cabin&display=swap" rel="stylesheet">
+<!-- Montserrat -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<!-- NavBar -->
+<nav>
+  <ul class="navmenu" id="navbar">
+   <img src="../../media/logo.png" alt="mbare media">
+   <li><a href="../../index.html"><h2>HOME</h2></a></li>
+   <li><a href="#"><h2>CHI SIAMO</h2></a></li>
+   <li><a href="../index.html"><h2>SERVIZI</h2></a></li>
+   <li><a href="#home"><h2>PORTFOLIO</h2></a></li>
+   <!-- <li><a href="#home"><h2>WEBDEVELOPER</h2></a></li> COMING SOON?-->
+  </ul> 
+ </nav>
+
+
+<div class="defaultsection" id="03">
+  <div class="top-section">
+  <b><h1>03</h1></b>
+  <div class="box1"></div>
+  </div>
+  <div class="text">
+    <h1>Marketing</h1>
+    <p>Mbare media si posiziona anche come una risorsa preziosa per il settore del marketing. Comprendendo l'importanza dei video nell'era digitale, la startup collabora con le aziende per sviluppare strategie di marketing video mirate. Attraverso una comprensione approfondita del pubblico di destinazione e degli obiettivi aziendali, Mbare media crea video personalizzati che comunicano il messaggio desiderato in modo accattivante. La startup offre servizi di consulenza, produzione e distribuzione video per garantire che le aziende raggiungano il loro pubblico in modo efficace.</p>
+  </div>
+  <div class="box2"></div>
+</div>
+
+<script>
+var prevScrollpos = 10;
+window.onscroll = function() {
+  var currentScrollPos = window.pageYOffset;
+  if (prevScrollpos > currentScrollPos) {
+    document.getElementById("navbar").style.top = "0";
+  } else {
+    document.getElementById("navbar").style.top = "-50px";
+  }
+  prevScrollpos = currentScrollPos;
+}
+</script>
+
+</body>
+</html>

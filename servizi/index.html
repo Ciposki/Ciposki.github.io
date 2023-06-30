@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="it-IT">
+<head>
+    <meta charset="UTF-8" />
+    <title>Welcome to Mbare Media</title>
+    <link rel="stylesheet" href="../style.css">
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
+<!-- Cabin REGULAR400 -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cabin&display=swap" rel="stylesheet">
+<!-- Montserrat -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<!-- NavBar -->
+<nav>
+  <ul class="navmenu" id="navbar">
+   <img src="../media/logo.png" alt="mbare media">
+   <li><a href="../index.html"><h2>HOME</h2></a></li>
+   <li><a href="#home"><h2>CHI SIAMO</h2></a></li>
+   <li><a href="#home"><h2>SERVIZI</h2></a></li>
+   <li><a href="#home"><h2>PORTFOLIO</h2></a></li>
+   
+  </ul> 
+ </nav>
+<!-- Home -->
+<div class="defaultsection" id="home">
+  <div class="top-section">
+  <b><h1>Servizi</h1></b>
+  <div class="box1"></div>
+  <!-- <button onclick="window.location.href='#01'"><div class="button"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25 25"><path style="fill:#232326" d="m18.294 16.793-5.293 5.293V1h-1v21.086l-5.295-5.294-.707.707L12.501 24l6.5-6.5-.707-.707z"/></svg></div></button> -->
+  </div>
+  <div class="servizi">
+    <div class="tiposervizio">
+        <a href="montaggio/index.html">
+        <img src="../media/montaggio.jpg" alt="Montaggio video">
+        </a>
+        <h1>Montaggio Video</h1>
+    </div>
+    <div class="tiposervizio">
+        <a href="marketing/index.html">
+        <img src="../media/marketing.jpg" alt="Marketing">
+        </a>
+        <h1>Marketing</h1>
+    </div>
+    <div class="tiposervizio">
+        <a href="innovazione/index.html">
+        <img src="../media/innovazione.jpg" alt="innovazione e creatività">
+        </a>
+    <h1>Innovazione e creatività</h1>
+    </div>
+    
+    <!-- <img src="" alt="web developer"> COMING SOON? -->
+  </div>
+  <div class="box2"></div>
+</div>
+
+<script>
+    var prevScrollpos = 10;
+    window.onscroll = function() {
+      var currentScrollPos = window.pageYOffset;
+      if (prevScrollpos > currentScrollPos) {
+        document.getElementById("navbar").style.top = "0";
+      } else {
+        document.getElementById("navbar").style.top = "-50px";
+      }
+      prevScrollpos = currentScrollPos;
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="it-IT">
+<head>
+    <meta charset="UTF-8" />
+    <title>Welcome to Mbare Media</title>
+    <link rel="stylesheet" href="../../style.css">
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
+<!-- Cabin REGULAR400 -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cabin&display=swap" rel="stylesheet">
+<!-- Montserrat -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<!-- NavBar -->
+<nav>
+  <ul class="navmenu" id="navbar">
+   <img src="../../media/logo.png" alt="mbare media">
+   <li><a href="../../index.html"><h2>HOME</h2></a></li>
+   <li><a href="#"><h2>CHI SIAMO</h2></a></li>
+   <li><a href="../index.html"><h2>SERVIZI</h2></a></li>
+   <li><a href="#home"><h2>PORTFOLIO</h2></a></li>
+   <!-- <li><a href="#home"><h2>WEBDEVELOPER</h2></a></li> COMING SOON?-->
+  </ul> 
+ </nav>
+
+<div class="defaultsection" id="02">
+  <div class="top-section">
+  <div class="box1"></div>
+  </div>
+  <div class="text">
+    <h1>Montaggio Video</h1>
+    <p>Mbare media comprende l'importanza di un montaggio video impeccabile per catturare l'attenzione del pubblico e trasmettere il messaggio desiderato. II team di editor di Mbare media utilizza strumenti all'avanguardia e competenze tecniche per creare video di alta qualità con una narrazione fluida e coinvolgente.Dall'editing di brevi clip promozionali a produzioni video più complesse, Mbare media si impegna a offrire risultati sorprendenti.
+    </p>
+  </div>
+  <div class="box2"></div>
+</div>
+
+
+<script>
+var prevScrollpos = 10;
+window.onscroll = function() {
+  var currentScrollPos = window.pageYOffset;
+  if (prevScrollpos > currentScrollPos) {
+    document.getElementById("navbar").style.top = "0";
+  } else {
+    document.getElementById("navbar").style.top = "-50px";
+  }
+  prevScrollpos = currentScrollPos;
+}
+</script>
+
+</body>
+</html>
