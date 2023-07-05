@@ -21,11 +21,12 @@
 
 <!-- NavBar -->
 <nav>
+  <button class="burgbutton"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="menu"><g data-name="Layer 2"><g data-name="menu"><rect width="18" height="2" x="3" y="11" rx=".95" ry=".95"></rect><rect width="18" height="2" x="3" y="16" rx=".95" ry=".95"></rect><rect width="18" height="2" x="3" y="6" rx=".95" ry=".95"></rect></g></g></svg></button>
   <ul class="navmob" id="navbar">
-    <li><a href="#home"><h2>HOME</h2></a></li>
-    <li><a href="chi-siamo/index.html"><h2>CHI SIAMO</h2></a></li>
-    <li><a href="servizi/index.html"><h2>SERVIZI</h2></a></li>
-    <li><a href="/Portfolio/index.html"><h2>PORTFOLIO</h2></a></li>
+    <li><a href="../../index.html"><h2>HOME</h2></a></li>
+   <li><a href="../../chi-siamo/index.html"><h2>CHI SIAMO</h2></a></li>
+   <li><a href="../index.html"><h2>SERVIZI</h2></a></li>
+   <li><a href="../../Portfolio/index.html"><h2>PORTFOLIO</h2></a></li>
     <!-- <li><a href="#home"><h2>WEBDEVELOPER</h2></a></li> COMING SOON?-->
    </ul>
   <ul class="navmenu" id="navbar">
@@ -51,17 +52,38 @@
 </div>
 
 <script>
-var prevScrollpos = 10;
-window.onscroll = function() {
-  var currentScrollPos = window.pageYOffset;
-  if (prevScrollpos > currentScrollPos) {
-    document.getElementById("navbar").style.top = "0";
-  } else {
-    document.getElementById("navbar").style.top = "-50px";
+  var btnContainer = document.querySelector('.navmob');
+  const btns = document.querySelector(".burgbutton");
+  var prevScrollpos = 10;
+  var isActive =false;
+  window.onscroll = function() {
+    var currentScrollPos = window.pageYOffset;
+    if (prevScrollpos > currentScrollPos) {
+      document.getElementById("navbar").style.top = "0";
+    } else {
+      document.getElementById("navbar").style.top = "-50px";
+    }
+    prevScrollpos = currentScrollPos;
   }
-  prevScrollpos = currentScrollPos;
-}
-</script>
+  
+  
+  // Loop through the buttons and add the active class to the current/clicked button
+  
+    btns.addEventListener("click", function() {
+      
+      if(isActive == false){
+      btnContainer.classList.add('active')
+      isActive =true;
+      }else{
+        document.querySelector('.active')?.classList.remove('active');
+        isActive =false;
+      }
+  
+    });
+  
+  
+  
+  </script>
 
 </body>
 </html>

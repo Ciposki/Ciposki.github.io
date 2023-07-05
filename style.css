@@ -18,6 +18,26 @@ body{
     background: black;
   }
 
+
+.burgbutton{
+    position: absolute;
+    background-color: white;
+    border:white;
+    align-items: center;
+    width: 13.5vw;
+    height: 9vw;
+    left: 80vw;
+    top: 3vw;
+    display: none;
+}
+.burgbutton svg{
+    width: 9vw;
+}
+.burgbutton:hover {
+    width: 13.5vw;
+    height: 9vw;
+    transition: all .3s ease
+}
 .navmob{
     flex-flow: column;
     font-family: 'Cabin', sans-serif;
@@ -31,7 +51,7 @@ body{
     justify-content: space-evenly;
     align-items: center;
     list-style-type: none;
-    transition: top 0.3s;
+    transition: .5s ease;
     left: 1000px;
     display: none;    
 }
@@ -62,10 +82,7 @@ body{
     background-color: black;
     transition: all 0.3s;
 }
-.navmob li:hover a{
-    color: white;
-    transition: all 0.3s;
-}
+
 
 .navmenu{
 
@@ -402,8 +419,14 @@ button:hover {
  /* Media only */
 
  @media only screen and (max-width: 1200px) {
+    .burgbutton{
+        position: fixed;
+        display: flex;
+        z-index: 1000;
+    }
     .navmob{
         display: flex;
+        transition: .5s ease;
     }
     .navmenu{
         display: none;
