@@ -80,7 +80,6 @@ body{
 .navmob li{
     transition: all 0.3s;
 }
-
 .navmob li:hover{
     background-color: black;
     transition: all 0.3s;
@@ -334,6 +333,27 @@ button:hover {
     transition: .5s ease;
     filter: brightness(0.4);
   }
+
+.email{
+    color: black;
+    transition: .5s ease;
+}
+.email:hover{
+    background-color: black;
+    color: white;
+    transition: .3s ease;
+}
+.instagram{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    color: black;
+    text-decoration: none;
+}
+.instagram img{
+    height: 3vw;
+    
+}
 
   /* Portfolio */
 
